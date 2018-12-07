@@ -71,7 +71,7 @@ class Methods{
     }
 
     private boolean containsLocation(final ArrayList<Location> list, final Location l){
-        return list.stream().anyMatch(o -> o.toString().equals(l.getRow() + "," + l.getColumn()));
+        return list.stream().anyMatch(o -> o.toString().equals(l.toString()));
     }
 
     void displayMovements(ArrayList<Location> moves){
